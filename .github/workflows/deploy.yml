@@ -18,4 +18,5 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: rsync deploy
-        run: rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 10022" --delete ./dist/* twor@sv8382.xserver.jp:/home/twor/develop36-2.site/public_html/gha/ --exclude .htaccess
+        run: rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 10022" --delete ./dist/* 2gp@2gp.sakura.ne.taccess
+jp:/home/2gp/www/toppers/gha/ --exclude .htaccess
